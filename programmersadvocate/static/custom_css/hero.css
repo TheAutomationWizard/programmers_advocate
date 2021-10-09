@@ -1,0 +1,23 @@
+.base_img {
+	position: relative;
+	display: block;
+	z-index: 1;
+}
+
+.overlay_img {
+    position: relative;
+    margin-top: -60%;
+    width: 80%;
+    height: 80%;
+    z-index: 2;
+ }
+
+.image_reduction{
+	max-height: 700px;
+	max-width: 100%;
+}
+
+#herogroup:hover {
+	position: relative;
+    z-index:90 !important;
+}

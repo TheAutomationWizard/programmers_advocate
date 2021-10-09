@@ -1,0 +1,161 @@
+{% extends 'root.html' %}
+{% load static %}
+
+{% block content %}
+
+   <!-- HERO Component -->
+   <section class="bg-hero text-white p-3" id="hero">
+      <div class="container">
+         <div class="row row-cols-1 row-cols-md-2 gx-5">
+            <div class="col">
+               <h2 class="text-dark">
+                  <p class="heading_style1 text-start">Are you a Software Developer or an Automation Engineer?</p>
+               </h2>
+               <p class="heading_style2 text-dark text-start">If you're trying to make way through plethora of open source tools out there, you've come to the right place. Just browse through what we offer.</p>
+               <div class="row row-cols-1 row-cols-md-2 gx-3 text-dark pt-5">
+                  <div class="col">
+                     <h2 class="heading_style3">
+                        <p class="text-start">What we have to offer!</p>
+                     </h2>
+                     <ul class="li_hero">
+                        <li>
+                           Learning material
+                           <ul>
+                              <li>Documention on almost all major tools (open source / licensed.)</li>
+                           </ul>
+                        </li>
+                        <li>Complete bootcamp courses.</li>
+                        <li>Support on all tools, across major platforms.</li>
+                     </ul>
+                  </div>
+                  <div class="col ps-3">
+                     <h2 class="heading_style3">
+                        <p class="text-start">What fields do we cover!</p>
+                     </h2>
+                     <ul class="li_hero">
+                        <li >Software Developement</li>
+                        <li>Automation Testing.</li>
+                        <li>Multi-language support.</li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="container col">
+               <div class='hero-section'>
+                  <img src="https://images.unsplash.com/photo-1581090690925-3898802525e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="group_of_engineers image"  class='shadow mb-2 rounded img-fluid image_reduction float-end' id="herogroup">
+                  <img src="https://images.unsplash.com/photo-1628056445600-4c75a4cdf7f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="individual_engineer" class="shadow mb-2 rounded overlay_img img-fluid float-center shadow-lg">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- CARD Component -->
+   <section class="cards m-5" id="product_info_cards">
+      <div class="container d-flex align-items-center justify-content-center flex-wrap">
+         <div class="box card_box">
+            <div class="body">
+               <div class="imgContainer"> <img src="{% static './images/cards-offerings/Learning Resources.png' %}" alt="" class="shadow"> </div>
+               <div class="content d-flex flex-column align-items-center justify-content-center">
+                  <div>
+                     <h3 class="text-white text-start fs-4 mb-3">Learning Materials</h3>
+                     <p class="fs-6 fw-light lh-1 text-white">
+                        Well maintained guidelines, a written course if you must. For those who prefer documented courses over long video lectures.
+                     </p>
+                     <div class="d-grid d-sm-block">
+                        <a  href="www.programmersadvocate.com/books/list-of-courses/"  class="btn btn-outline-warning ">Browse books</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="box card_box">
+            <div class="body">
+               <div class="imgContainer"> <img src="{% static './images/cards-offerings/Personalized Courses.png' %}" alt="" class="shadow"> </div>
+               <div class="content d-flex flex-column align-items-center justify-content-center">
+                  <div>
+                     <h3 class="text-white text-start fs-4 mb-3">Personalized Courses</h3>
+                     <p class="fs-6 fw-light lh-1 text-white">
+                        Well maintained guidelines, a written course if you must. For those who prefer documented courses over long video lectures.
+                     </p>
+                     <div class="d-grid d-sm-block">
+                        <a  href="www.programmersadvocate.com/books/list-of-courses/"  class="btn btn-outline-warning ">Browse videos</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="box card_box">
+            <div class="body">
+               <div class="imgContainer"> <img src="{% static './images/cards-offerings/Help and FAQs.png' %}" alt="" class="shadow"> </div>
+               <div class="content d-flex flex-column align-items-center justify-content-center">
+                  <div>
+                     <h3 class="text-white text-start fs-4 mb-3">Help & FAQ Center</h3>
+                     <p class="fs-6 fw-light lh-1 text-white">
+                        Find solutions to all your queries here. From pre-answered list of queries to posting new query and answering all is possible here.
+                     </p>
+                     <div class="d-grid d-sm-block">
+                        <a  href="www.programmersadvocate.com/books/list-of-courses/"  class="btn btn-outline-warning ">Help Center</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- CAROUSEL Component -->
+   <section class="bg-hero carousel" id="product_logo_carousel">
+      <div class="content_carousel d-flex align-items-center justify-content-center">
+         <div class="container rounded h-25" style=" background-color: #ebebeb">
+            <div class="text-center mt-2 heading_style1">Programmer's Advocate...</div>
+            <div class="h3 text-center pt-2 heading_style2">We are proud to present the technologies we support so far...</div>
+            <div class="fs-5 text-center pb-3 mb-3 heading_style2">We thrive on your feedback. Try out these free courses and allow us to be a part of your career development.</div>
+            <div class="rollers position-relative overflow-hidden">
+               <div class="start-roller"></div>
+               <div class="wrapper">
+                  <div class="items-container roll-LL">
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-appium-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-selenium-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-winium-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-pytest-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/dev-spring-boot-logo.png' %}" alt="" class="company"> </div>
+                  </div>
+                  <div class="items-container roll-RL">
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-cucumber-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-TestNG-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-robotframework-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-seetest-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/test-codeceptjs-logo.png' %}" alt="" class="company"> </div>
+                  </div>
+               </div>
+               <div class="wrapper">
+                  <div class="items-container reverse-roll-LL">
+                     <div class="item"> <img src="{% static './images/tools-carousel/dev-bootstrap-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/dev-Django-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/dev-Flask-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/ops-Docker-Logo.png' %}" alt="" class="company"> </div>
+                  </div>
+                  <div class="items-container reverse-roll-RL">
+                     <div class="item"> <img src="{% static './images/tools-carousel/dev-HTML_CSS-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/lang-JavaScript-logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/lang-Python-Logo.png' %}" alt="" class="company"> </div>
+                     <div class="item"> <img src="{% static './images/tools-carousel/ops-kubernetes-logo.png' %}" alt="" class="company"> </div>
+                  </div>
+               </div>
+               <div class="end-roller"></div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+   <script src="{% static 'js/jquery.min.js' %}"></script>
+   <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'js/highlight.pack.js' %}"></script>
+   <script src="{% static 'js/clipboard.min.js' %}"></script>
+   <script src="{% static 'js/script.js' %}"></script>
+
+
+{% endblock %}
