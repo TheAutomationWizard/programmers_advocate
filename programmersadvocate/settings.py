@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
+    'category',
+    'store',
 ]
 
 MIDDLEWARE = [
@@ -69,6 +72,11 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'programmersadvocate.wsgi.application'
+
+# ToDo : Adding Custom User Model
+AUTH_USER_MODEL = 'accounts.Account'
+
+
 
 
 # Database
@@ -124,8 +132,9 @@ STATICFILES_DIRS = [
     'programmersadvocate/static',
 ]
 
-
-
+# ToDo - media_files_configuration
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR /'media'
 
 
 

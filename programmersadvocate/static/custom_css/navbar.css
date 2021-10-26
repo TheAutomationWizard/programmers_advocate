@@ -1,3 +1,25 @@
+/*  Navbar CSS Items  */
 .navbar_container{
-	   z-index: 10000;
+	   z-index: 999999;
+       background-image: linear-gradient(to right, white, #ccedff);
+}
+
+.bg-light-custom{
+  background-image: linear-gradient(to right, white, #ccedff);
+}
+
+.nav-menu {
+  width: 35px;
+  height: 35px;
+  color: #62a2de;
+}
+
+
+/*  Footer CSS Items  */
+
+.foo-bg {
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    color : maroon;
+
 }
