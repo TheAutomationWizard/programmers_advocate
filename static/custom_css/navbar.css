@@ -1,3 +1,8 @@
 .navbar_container{
-	   z-index: 10000;
+	   z-index: 999999;
+       background-image: linear-gradient(to right, white, yellow);
+}
+
+.bg-light-custom{
+  background-image: linear-gradient(to right, white, yellow);
 }
