@@ -1,44 +1,60 @@
+<!-- ========================= NAVBAR ========================= -->
 <header>
-   <!-- Custom Navbar Code Goes Here -->
-   <nav class="navbar navbar-light bg-light navbar-expand-lg">
-      <div class="container">
-         <a href="" class="navbar-brand revolve_3d" style="mix-blend-mode: multiply;">
-         <img src="https://s3-us-east-2.amazonaws.com/designevo/projects/uid-2850492/8d332ba162868d01ba2349407fdfc380/preview.png?t=1632455799858"
-            alt="brand-logo" style="mix-blend-mode: multiply;">
-         </a>
-         <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-            data-bs-target="#navbarScrollingCustom" aria-controls="navbarScrollingCustom" aria-expanded="false"
-            aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarScrollingCustom">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-               <li class="nav-item">
-                  <a href="file:///C:/Endurance/FullStack/Frontend/WebPages/HomePage/homepage.html#"
-                     class="nav-link active" aria-current="page">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Link</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Link</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link disabled" tabindex="-1" aria-disabled="true">Disabled</a>
-               </li>
-               <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"
-                     aria-expanded="false">Topics</a>
-                  <div class="dropdown-menu">
-                     <a href="container.html" class="dropdown-item">Home</a>
-                     <a href="grid.html" class="dropdown-item">Grid</a>
-                     <a href="columns.html" class="dropdown-item">Columns</a>
-                     <a href="gutters.html" class="dropdown-item">Gutters</a>
-                     <a href="utilities-for-layout.html" class="dropdown-item d-none">Utilities for layout</a>
-                  </div>
-               </li>
-            </ul>
+      <nav class="navbar bg-light-custom navbar-light bg-light navbar-expand-lg">
+         <div class="container navbar_container">
+            <a href="/" class="navbar-brand revolve_3d" style="mix-blend-mode: multiply;">
+            <img src="https://s3-us-east-2.amazonaws.com/designevo/projects/uid-2850492/8d332ba162868d01ba2349407fdfc380/preview.png?t=1632455799858"
+               alt="brand-logo" style="mix-blend-mode: multiply;">
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+               data-bs-target="#navbarScrollingCustom" aria-controls="navbarScrollingCustom" aria-expanded="false"
+               aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScrollingCustom">
+               <ul class="navbar-nav navbar-nav-scroll ms-auto">
+
+                  <li class="nav-item" data-bs-toggle="tooltip" title="Home" data-bs-placement="bottom">
+                     <a href="/"
+                        class="nav-link active" aria-current="page">
+                        <svg class = 'nav-menu' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                        </a>
+                  </li>
+
+                  <li class="nav-item" data-bs-toggle="tooltip" title="Library"  data-bs-placement="right">
+                     <a href="ReadMe" class="nav-link"  data-bs-toggle="popover" data-bs-trigger="click hover"
+                     data-bs-content="Documented Courses">
+                        <svg class = 'nav-menu'  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 1l-5 5v11l5-4.5V1zM1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5V6c-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6zm22 13.5V6c-.6-.45-1.25-.75-2-1v13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5v2c1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5v-1.1z"/></svg>
+                            </a>
+                  </li>
+
+                  <li class="nav-item" data-bs-toggle="tooltip" title="Albums"  data-bs-placement="bottom">
+                     <a href="browse/" class="nav-link"  data-bs-toggle="popover" data-bs-trigger="click hover"
+                     data-bs-content="Video Courses">
+                        <svg class = 'nav-menu'  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg>
+                            </a>
+                  </li>
+
+                  <li class="nav-item" data-bs-toggle="tooltip" title="Help Center"  data-bs-placement="left">
+                     <a href="Help Me Out" class="nav-link"  data-bs-toggle="popover" data-bs-trigger="click hover"
+                     data-bs-content="Help & Support">
+                        <svg class = 'nav-menu'  xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M21,12.22C21,6.73,16.74,3,12,3c-4.69,0-9,3.65-9,9.28C2.4,12.62,2,13.26,2,14v2c0,1.1,0.9,2,2,2h1v-6.1 c0-3.87,3.13-7,7-7s7,3.13,7,7V19h-8v2h8c1.1,0,2-0.9,2-2v-1.22c0.59-0.31,1-0.92,1-1.64v-2.3C22,13.14,21.59,12.53,21,12.22z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M18,11.03C17.52,8.18,15.04,6,12.05,6c-3.03,0-6.29,2.51-6.03,6.45c2.47-1.01,4.33-3.21,4.86-5.89 C12.19,9.19,14.88,11,18,11.03z"/></g></g></svg>
+                               </a>
+                  </li>
+<!--                  <li class="nav-item dropdown">-->
+<!--                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true"-->
+<!--                        aria-expanded="false">GoTo Links</a>-->
+<!--                     <div class="dropdown-menu">-->
+<!--                        <a href="/" class="dropdown-item">Home</a>-->
+<!--                        <a href="ReadMe" class="dropdown-item">ReadMe courses.</a>-->
+<!--                        <a href="Watch n Learn" class="dropdown-item">Watch 'N' Learn courses.</a>-->
+<!--                        <a href="Help Me Out" class="dropdown-item">Help Me Out.</a>-->
+<!--                        <a href="Additional Items" class="dropdown-item d-none">Position Holder for extra items...</a>-->
+<!--                     </div>-->
+<!--                  </li>-->
+               </ul>
+            </div>
          </div>
-      </div>
-   </nav>
+      </nav>
 </header>
+<!-- ========================= NAVBAR END // ========================= -->

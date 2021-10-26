@@ -1,0 +1,26 @@
+{% extends 'root.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div>
+    <h1 style="margin:20px; height:100px; color:green; text-align:center;"> All Online Courses </h1>
+
+    {% for course in courses %}
+    <div style=" margin:25px; background-color:#a0e39f;">
+        <div style="margin:15px;">
+            <h2> <em><u>{{ course.course_name }}</u></em></h2>
+            <img class="img-thumbnail" src="{{ course.images.url }}" style="max-width:200px; max-height:200px;" alt="{{course.course_name}} image not found...">
+            <h3 class = "heading_style2">{{ course.description}} </h3>
+            <div>
+                <p style="color:red;"><b> Get this at : Rs. {{course.price}}</b></p>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+
+{% endblock %}
