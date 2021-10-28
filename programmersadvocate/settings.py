@@ -24,7 +24,7 @@ TEMPLATES_LIST = [TEMPLATES_PATH / 'components', TEMPLATES_PATH / 'pages']
 SECRET_KEY = 'django-insecure-f$(kl$%x^q$q-e1u3w%j=e8vyja)z%$t_#)_5f!m%p%pk#e9%u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True  # being set False below, when on production env.
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://www.programmersadvocate.com', 'www.programmersadvocate.com', 'programmersadvocate.herokuapp.com', 'www.programmersadvocate.herokuapp.com']
 
@@ -127,11 +127,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+
+# ToDo - Read the usage of static files vars
+#  https://stackoverflow.com/questions/14472259/why-wont-collectstatic-copy-my-static-files
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / 'static' # collectstatic will put all static files here...
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, '/static'),
-]
+    # 'programmersadvocate/static',
+    os.path.join(BASE_DIR, 'programmersadvocate/static'),
+]   # collectstatic will additionally look for static files in these DIRS, on top of static URL
+
 
 # ToDo - media_files_configuration
 MEDIA_URL = '/media/'
