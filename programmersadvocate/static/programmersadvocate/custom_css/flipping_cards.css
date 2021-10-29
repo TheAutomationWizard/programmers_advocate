@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*body {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-*/
 .container {
     transform-style: preserve-3d
 }
@@ -21,7 +8,7 @@
     position: relative;
     width: 300px;
     height: 300px;
-    margin: 20px;
+    margin: 20px 5px 20px 0px;
     transform-style: preserve-3d;
     perspective: 1000px;
     cursor: pointer
@@ -84,5 +71,13 @@
 }
 
 .card_box{
-    padding-right: 25rem;
+    padding-right: 19rem;
+}
+
+@media(min-width: 768px) {
+    .flip_cards_container {
+        flex: 0 0 auto;
+        width: fit-content;
+        height: fit-content;
+        }
 }

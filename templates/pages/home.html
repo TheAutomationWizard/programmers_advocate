@@ -52,9 +52,9 @@
 
 
    <!-- CARD Component -->
-   <section class="cards m-5" id="product_info_cards">
-      <div class="container d-flex align-items-center justify-content-center flex-wrap">
-         <div class="box card_box">
+   <section class="row row-cols-1 row-cols-md-3 cards m-2" id="product_info_cards">
+      <div class="container d-flex align-items-center justify-content-center flip_cards_container" >
+         <div class="col box card_box">
             <div class="body">
                <div class="imgContainer"> <img src="{% static './programmersadvocate/images/cards-offerings/Learning Resources.png' %}" alt="" class="shadow"> </div>
                <div class="content d-flex flex-column align-items-center justify-content-center">
@@ -70,7 +70,10 @@
                </div>
             </div>
          </div>
-         <div class="box card_box">
+      </div>
+
+      <div class="container d-flex align-items-center justify-content-center flip_cards_container" >
+                        <div class="col box card_box">
             <div class="body">
                <div class="imgContainer"> <img src="{% static './programmersadvocate/images/cards-offerings/Personalized Courses.png' %}" alt="" class="shadow"> </div>
                <div class="content d-flex flex-column align-items-center justify-content-center">
@@ -87,7 +90,10 @@
                </div>
             </div>
          </div>
-         <div class="box card_box">
+      </div>
+
+      <div class="container d-flex align-items-center justify-content-center flip_cards_container" >
+         <div class="col box card_box">
             <div class="body">
                <div class="imgContainer"> <img src="{% static './programmersadvocate/images/cards-offerings/Help and FAQs.png' %}" alt="" class="shadow"> </div>
                <div class="content d-flex flex-column align-items-center justify-content-center">
@@ -104,6 +110,9 @@
             </div>
          </div>
       </div>
+
+
+
    </section>
 
    <!-- CAROUSEL Component -->
