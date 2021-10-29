@@ -7,8 +7,8 @@
 .overlay_img {
     position: relative;
     margin-top: -60%;
-    width: 80%;
-    height: 80%;
+    width: 30em;
+    height: 35em;
     z-index: 2;
  }
 
@@ -21,3 +21,9 @@
 	position: relative;
     z-index:90 !important;
 }
+
+/*
+. container .col {
+    width : 45%
+}
+*/
