@@ -4,6 +4,10 @@
     transform-style: preserve-3d
 }
 
+.flash_cards {
+    background-image : linear-gradient(to bottom , #ccedff, rgba(148,187,233,1));
+}
+
 .container .box {
     position: relative;
     width: 300px;
@@ -80,4 +84,23 @@
         width: fit-content;
         height: fit-content;
         }
+}
+
+
+/* HomePage :  Search Bar - CSS */
+
+.searchbar-btn:hover {
+    color: #fff
+}
+
+
+.searchbar-input-text:focus {
+    box-shadow: 0px 0px 0px;
+    border-color: #f8c146;
+    outline: 0px
+}
+
+
+.searchbar-form-control {
+    border: 1px solid #f8c146
 }
